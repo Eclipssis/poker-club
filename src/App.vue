@@ -1,10 +1,18 @@
 <template>
-  <div>
-    <h1>Poker club</h1>
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+  <div class="container mx-auto">
+    <header class="flex justify-between items-center p-4 text-white">
+      <div class="flex-1 text-left">
+        <a href="#!" class="inline-block w-20">
+          <img alt="Vue logo" src="./assets/logo.png" />
+        </a>
+      </div>
+      <h1 class="flex-1">Aleksey Poker club</h1>
+      <nav class="flex-1 text-right">
+        <router-link to="/login" class="m-4">Login</router-link>
+        <router-link to="/registration" class="m-4">Register</router-link>
+      </nav>
+    </header>
+
     <router-view />
   </div>
 </template>
